@@ -25,6 +25,11 @@ document.getElementById('btn-complete').addEventListener('click', function (even
     p.style.marginBottom = '6px';
     const historyList = document.getElementById('history-list');
     historyList.appendChild(p);
+    alert('You have completed the task "Fix Mobile Button Issue"');
+        if(taskCompleted.innerText == 0){
+        alert('Congratulations! You have successfully completed asigned tasks :)');
+        console.log(taskCompleted.value)
+    }   
 });
 document.getElementById('btn-complete2').addEventListener('click', function (event) {
     event.preventDefault();
@@ -52,6 +57,11 @@ document.getElementById('btn-complete2').addEventListener('click', function (eve
     p.style.marginBottom = '6px';
     const historyList = document.getElementById('history-list');
     historyList.appendChild(p);
+    alert('You have completed the task "Add Dark Mode"');
+        if(taskCompleted.innerText == 0){
+        alert('Congratulations! You have successfully completed asigned tasks :)');
+        console.log(taskCompleted.value)
+    }
 });
 document.getElementById('btn-complete3').addEventListener('click', function (event) {
     event.preventDefault();
@@ -79,6 +89,11 @@ document.getElementById('btn-complete3').addEventListener('click', function (eve
     p.style.marginBottom = '6px';
     const historyList = document.getElementById('history-list');
     historyList.appendChild(p);
+    alert('You have completed the task "Optimize Home Page"');
+        if(taskCompleted.innerText == 0){
+        alert('Congratulations! You have successfully completed asigned tasks :)');
+        console.log(taskCompleted.value)
+    }
 });
 document.getElementById('btn-complete4').addEventListener('click', function (event) {
     event.preventDefault();
@@ -106,6 +121,11 @@ document.getElementById('btn-complete4').addEventListener('click', function (eve
     p.style.marginBottom = '6px';
     const historyList = document.getElementById('history-list');
     historyList.appendChild(p);
+    alert('You have completed the task "Add New Emoji"');
+        if(taskCompleted.innerText == 0){
+        alert('Congratulations! You have successfully completed asigned tasks :)');
+        console.log(taskCompleted.value)
+    }
 });
 document.getElementById('btn-complete5').addEventListener('click', function (event) {
     event.preventDefault();
@@ -133,6 +153,11 @@ document.getElementById('btn-complete5').addEventListener('click', function (eve
     p.style.marginBottom = '6px';
     const historyList = document.getElementById('history-list');
     historyList.appendChild(p);
+    alert('You have completed the task "Intregate OpenAI API"');
+        if(taskCompleted.innerText == 0){
+        alert('Congratulations! You have successfully completed asigned tasks :)');
+        console.log(taskCompleted.value)
+    }
 });
 document.getElementById('btn-complete6').addEventListener('click', function (event) {
     event.preventDefault();
@@ -160,7 +185,14 @@ document.getElementById('btn-complete6').addEventListener('click', function (eve
     p.style.marginBottom = '6px';
     const historyList = document.getElementById('history-list');
     historyList.appendChild(p);
+    alert('You have completed the task "Improve Job Searching"');
+        if(taskCompleted.innerText == 0){
+        alert('Congratulations! You have successfully completed asigned tasks :)');
+        console.log(taskCompleted.value)
+    }
 });
+
+
 
 // Clear History
 document.getElementById('btn-clear-history').addEventListener('click', function (event) {
