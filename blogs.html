@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bground: 'rgba(244, 247, 255, 1)',
+                        btnground: '#3752FD',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-bground">
+    <header class="max-w-5xl min-h-screen bg-bground mx-auto">
+        <section class="p-4">
+            <!-- navbar -->
+            <nav class="flex items-center justify-between bg-white p-4 rounded-xl">
+                <!-- leftside logo section -->
+                <div class="flex items-center align-center gap-2">
+                    <a href=""><img src="assets/logo.png" alt=""></a>
+                    <h1 class="text-2xl"><a href="">Dev<span class="font-bold">Board</span></a></h1>
+                </div>
+                <!-- rightside logo section -->
+                <div>
+                    <button id="back-to-desk" class="btn bg-btnground text-white font-bold">Back to Desk</button>
+                    <script>
+                        //back to desk button
+                        const btnBacks = document.getElementById('back-to-desk');
+                        btnBacks.addEventListener('click', function (event) {
+                            window.location.href = 'index.html';
+                        });
+                    </script>
+                </div>
+            </nav>
+            <section>
+                <main>
+                    <h1 class="font-bold text-center mt-4 mb-4 text-2xl">Blogs</h1>
+                    <div class="bg-white  mx-4 rounded-sm mb-4">
+                        <h4 class="mb-2 p-4 font-bold text-lg">Question-1: What are the different ways to select an elements
+                            in DOM?</h4>
+                        <hr class="border-dotted">
+                        <p class="mt-2 p-4">ahitecto quibusdam eveniet corporis dicta obcaecati qui asperiores accusamus
+                            doloremque. Quisquam cum labore ea perferendis perspiciatis consequuntur ex quod repellendus
+                            ducimus?</p>
+                    </div>
+                    <div class="bg-white mx-4 rounded-sm mb-4">
+                        <h4 class="mb-2 p-4 font-bold text-lg">Question-2: What is the difference among innerHTML,
+                            innerText, and textContainer?</h4>
+                        <hr class="border-dotted">
+                        <p class="mt-2 p-4"> amet consectetur adipisicing elit. Ea architecto quibusdam eveniet corporis
+                            dicta obcaecati qui asperiores accusamus doloremque. Quisquam cum labore ea perferendis
+                            perspiciatis consequuntur ex quod repellendus ducimus?</p>
+                    </div>
+                    <div class="bg-white mx-4 rounded-sm mb-4">
+                        <h4 class="mb-2 p-4 font-bold text-lg">Question-3: What is event delegation in DOM?</h4>
+                        <hr class="border-dotted">
+                        <p class="mt-2 p-4">sit amet consectetur adipisicing elit. Ea architecto quibusdam eveniet corporis
+                            dicta obcaecati qui asperiores accusamus doloremque. Quisquam cum labore ea ?</p>
+                    </div>
+                    <div class="bg-white mx-4 rounded-sm mb-4">
+                        <h4 class="mb-2 p-4 font-bold text-lg">Question-4: What is event bubbling in the DOM?</h4>
+                        <hr class="border-dotted">
+                        <p class="mt-2 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto quibusdam
+                            eveniet corporis dicta obcaecati qui asperiores accusamus doloremque. Quisquam cum labore ea
+                            perferendis perspiciatis consequuntur ex quod repellendus ducimus?</p>
+                    </div>
+                </main>
+            </section>
+        </section>
+    </header>
+    <script src="js/main.js"></script>
+    <script src="js/utilities.js"></script>
+
+</body>
+
+</html>
